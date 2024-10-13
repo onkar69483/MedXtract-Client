@@ -43,7 +43,7 @@ const Extract = () => {
       formData.append('image', file);  // Make sure this matches the backend expectation
 
       try {
-        const response = await axios.post('http://localhost:8000/api/process-image/', formData, {
+        const response = await axios.post('https://krhh5ptj-8000.inc1.devtunnels.ms/api/process-image/', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
